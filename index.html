@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usman's Fitness Club</title>
+    <!-- You can also add a css file for external css -->
+    <style>
+      /* CSS Reset */
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url("weights.jpg");
+      }
+      .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+      }
+      .left img {
+        filter: brightness(30%);
+        width: 79px;
+        border-radius: 75px;
+        margin: 0px 59px;
+        /* filter: invert(100%); You can use to change color to black-->white */
+      }
+      .left div {
+        line-height: 10px;
+        font-size: 20px;
+        text-align: center;
+        /* font-size: x-small; No Need if we Font Size by ourself */
+        color: black;
+        font-family: cursive;
+      }
+      .mid {
+        /* border: 2px solid green; */
+        font-family: cursive;
+        display: inline-block;
+        width: 37%;
+        margin: 20px 335px;
+        border-radius: 60px;
+      }
+      .right {
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 20px;
+      }
+      .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 34px 4px;
+      }
+      .navbar li a:hover {
+        text-decoration: underline;
+        color: blue;
+      }
+      /*Dammm yarrr active sa pehly "." laga-naa tha ":" nai ye errror tha*/
+      .navbar li a.active {
+        text-decoration: underline;
+        color: darkred;
+      }
+      .btn {
+        font-family: "Courier New", Courier, monospace;
+        margin: 0px 9px;
+        padding: 18px 22px;
+        background-color: black;
+        color: white;
+        border: 2px solid darkblue;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .btn:hover,
+      .btn.active {
+        background-color: aquamarine;
+        color: crimson;
+        text-decoration: underline;
+      }
+      .container {
+        /* border: 2px solid black; */
+        display: inline-block;
+        margin: 100px 100px;
+        padding: 50px 50px;
+        width: 33%;
+        border-radius: 40px;
+      }
+      .button {
+        font-family: "Courier New", Courier, monospace;
+        margin: -16px 129px;
+        background-color: black;
+        color: white;
+        border: 2px solid darkblue;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: rgb(248, 78, 163);
+        color: darkblue;
+      }
+      .form-group input {
+        text-align: center;
+        display: block;
+        font-family: "Courier New", Courier, monospace;
+        margin: 20px 60px;
+        background-color: black;
+        color: white;
+        border: 2px solid darkblue;
+        border-radius: 30px;
+        font-size: 20px;
+        width: 280px;
+      }
+      .container h1 {
+        font-family: 'Courier New';
+        margin: 10px 14px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Left Box for Logo -->
+      <div class="left">
+        <img src="logodum.jpg" alt="You internet is Slow Can't Load Image"/>
+        <div><strong>Usman's Fitness Club</strong></div>
+      </div>
+      <!-- Naviagtion bar at mid -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="https://www.calculator.net/ideal-weight-calculator.html" target="_blank">Fitness Calculator</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Right box for buttons -->
+      <div class="right">
+        <button class="btn" id="active">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the Best Gym Now</h1>
+      <form action="style.css" target="_blank">
+        <div class="form-group">
+          <input type="text" name="FName" placeholder="Enter your First Name"/>
+        </div>
+        <div class="form-group">
+          <input type="text" name="SName" placeholder="Enter your Second Name"
+          />
+        </div>
+        <div class="form-group">
+          <input type="text" name="Gender" placeholder="Enter your Gender"/>
+        </div>
+        <div class="form-group">
+          <input type="number" name="Age" placeholder="Enter your Age"/>
+        </div>
+        <div class="form-group">
+          <input type="text" name="Email" placeholder="Enter your Email"/>
+        </div>
+        <div class="form-group">
+          <input type="number" name="Phone" placeholder="Enter your Phone No."/>
+        </div>
+        <div class="form-group">
+          <input type="text" name="Local" placeholder="Enter your Locality"/>
+        </div>
+        <button class="button">Submit Here</button>
+      </form>
+    </div>
+  </body>
+</html>
